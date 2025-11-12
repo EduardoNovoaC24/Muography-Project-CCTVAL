@@ -2,7 +2,7 @@
 
 **Autor:** Eduardo Andrés Novoa Carrasco  
 **Afiliación:** Centro Científico Tecnológico de Valparaíso (CCTVal), Universidad Técnica Federico Santa María (UTFSM)  
-**Notebook de referencia:** `Analisis (2).ipynb`
+**Notebook de referencia:** `Muography_Analisis.ipynb`
 
 ---
 
@@ -148,7 +148,7 @@ Si empleas este pipeline o partes de él, por favor cita:
 ```
 Novoa-Carrasco, E. A., CCTVal – UTFSM (2025). Método de triangulación en muografía:
 pipeline de filtrado, clustering y voxelización con métricas de cobertura/precisión. 
-Repositorio y notebook: Analisis (2).ipynb.
+Repositorio y notebook: Muography_Analisis.ipynb.
 ```
 
 ---
