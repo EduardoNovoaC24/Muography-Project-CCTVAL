@@ -144,39 +144,6 @@ source .venv/bin/activate  # (Windows: .venv\Scripts\activate)
 pip install numpy scipy matplotlib plotly awkward uproot scikit-learn pywt
 ```
 
-### Estructura sugerida de repositorio
-```
-.
-├── notebooks/
-│   └── Analisis (2).ipynb
-├── data/
-│   ├── signal.root
-│   └── background.root
-├── src/                 # opcional: factorizar funciones del notebook
-└── README.md
-```
-
-### Ejecución básica
-1. Coloca `signal.root` y `background.root` en `data/`.
-2. Abre `notebooks/Analisis (2).ipynb` en Jupyter.
-3. Ajusta `det_ids`, `detector_positions`, volumen ROI (`xs, ys, zs`) y parámetros de filtro (Wiener/gauss).
-4. Ejecuta todas las celdas y exporta las figuras/métricas.
-
----
-
-## Parámetros importantes (guía rápida)
-
-- **Wiener**: `cutoff_frac` (0.15–0.35), `noise_ring` (0.4–0.6), `detrend=True`.  
-- **Z‑score**: fijar límites para visualización (e.g., `sigma_lim ≈ 3–5`).  
-- **K‑Means**: `n_clusters=2` para binario (objeto/fondo) por canal.  
-- **Voxelización**: `voxel_size` (0.5–1.5 m, según resolución), `ray_len` y `n_samples` por rayo.  
-- **Mínimo de detectores por voxel**: `min_detectors` (2–4) para robustez.  
-- **GT frustum**: centro `(cx, cy)`, `z_start`, `height`, `r_top`, `r_bottom`, `direction=('up'|'down')`.
-
----
-
-## Cómo citar
-
 Si empleas este pipeline o partes de él, por favor cita:
 ```
 Novoa-Carrasco, E. A., CCTVal – UTFSM (2025). Método de triangulación en muografía:
